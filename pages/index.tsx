@@ -35,7 +35,8 @@ export default function Pstop() {
             }
           }`,
         }),
-      }).then((r) => r.json().then((r) => r.data))
+      }).then((r) => r.json().then((r) => r.data)),
+    { refreshInterval: 5000 }
   );
 
   if (error) return <div>failed to load</div>;
