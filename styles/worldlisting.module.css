@@ -1,0 +1,21 @@
+.factionBox, .root {
+    display: flex;
+    flex-direction: row;
+}
+
+.root {
+    line-height: 1.6;
+    margin: 1em 0;
+}
+
+.nc {
+    background-color: blue;
+}
+
+.tr {
+    background-color: red;
+}
+
+.vs {
+    background-color: purple;
+}

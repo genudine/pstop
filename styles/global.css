@@ -1,0 +1,10 @@
+body {
+    background-color: #010101;
+    color: #efefef;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+.bar {
+    padding: 2px;
+}

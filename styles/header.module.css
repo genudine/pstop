@@ -1,0 +1,21 @@
+.good {
+    color: green;
+}
+
+.warn {
+    color: orange;
+}
+
+.bad {
+    color: red;
+}
+
+.statusItem {
+    font-weight: bold;
+}
+
+.invertedBar {
+    background-color: #efefef;
+    color: #010101;
+    padding: 0 1em;
+}
