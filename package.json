@@ -2,11 +2,14 @@
   "name": "pstop",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -18,5 +21,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0",
+    "prettier-plugin-organize-imports": "^3.2.1",
+    "prettier-plugin-pkg": "^0.17.1"
   }
 }
