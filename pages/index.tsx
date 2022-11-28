@@ -42,18 +42,20 @@ export default function Pstop() {
   if (!data) return <div>loading...</div>;
 
   return (
-    <div>
+    <div style={{ position: "relative" }}>
       <Head>
         <title>PlanetSide 2 Live Stats | pstop</title>
       </Head>
       <Header health={data.health} failed={!!error} waiting={!data} />
-      <div>
-        {data.allWorlds
-          .sort((a, b) => (a.population > b.population ? -1 : 1))
-          .map((world, idx) => (
-            <WorldListing world={world} key={idx} />
-          ))}
-      </div>
+      <table style={{ position: "absolute", left: 0, right: 0 }}>
+        <tbody>
+          {data.allWorlds
+            .sort((a, b) => (a.population > b.population ? -1 : 1))
+            .map((world, idx) => (
+              <WorldListing world={world} key={idx} />
+            ))}
+        </tbody>
+      </table>
     </div>
   );
 }
